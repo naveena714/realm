@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  overflow: hidden;
+  background: radial-gradient(circle at top, #3b0a5f, #05000a);
+  color: white;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  backdrop-filter: blur(2px);
+}
+
+#overlay h1 {
+  font-size: 4.5rem;
+  letter-spacing: 6px;
+  background: linear-gradient(90deg, #ffd1ff, #caa7ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#overlay p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+#enter {
+  margin-top: 30px;
+  padding: 16px 46px;
+  border-radius: 40px;
+  border: none;
+  background: linear-gradient(135deg, #ffc6ff, #b28dff);
+  color: #2a0035;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 50px rgba(255, 183, 255, 0.8);
+  transition: transform 0.4s ease;
+}
+
+#enter:hover {
+  transform: scale(1.15);
+}
